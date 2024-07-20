@@ -1,0 +1,39 @@
+{
+	"name": "npm_example",
+	"version": "1.0.0",
+	"description": "cources QA aut",
+	"main": "hello.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"format": "npx prettier. --check",
+		"precommit": "eslint .",
+		"prepare": "husky"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^1.7.2",
+		"chalk": "^5.3.0",
+		"multiplication-table-genius": "^2.0.1"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.7.0",
+		"eslint": "^9.7.0",
+		"globals": "^15.8.0",
+		"husky": "^9.1.1",
+		"lint-staged": "^15.2.7",
+		"prettier": "3.3.3"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"*.js": [
+			"eslint --fix",
+			"prettier --write",
+			"git add"
+		]
+	}
+}
