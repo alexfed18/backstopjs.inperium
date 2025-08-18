@@ -1,0 +1,8 @@
+node_modules
+examples/inperium/backstop_data/bitmaps_test
+examples/inperium/backstop_data/html_report
+examples/inperium/backstop_data/ci_report
+
+# local extras
+Playwright/
+QA aut project/
