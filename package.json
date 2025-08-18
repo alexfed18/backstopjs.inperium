@@ -1,0 +1,13 @@
+{
+  "name": "backstopjs.inperium",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "reference": "backstop reference --config=examples/inperium/backstop.config.js",
+    "test": "backstop test --config=examples/inperium/backstop.config.js",
+    "openReport": "backstop openReport --config=examples/inperium/backstop.config.js"
+  },
+  "devDependencies": {
+    "backstopjs": "^6.3.25"
+  }
+}
